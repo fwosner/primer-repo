@@ -8,3 +8,15 @@ h1 {
 	font-size: 24px;
 	margin: 0;
 }
+a {
+	text-decoration: none;
+	color: #CCCCCC;
+}
+/* Para que el hipervinculo cambie en función de una acción del usuario
+ejemplo que cambie de color cuando paso con el mouse*/
+a:hover {
+	color: #FFFFFF;
+}
+header {
+	background-color: #212121;
+}
