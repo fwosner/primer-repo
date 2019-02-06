@@ -122,6 +122,38 @@ a:hover {
 	margin: 0;
 	padding: 10px;
 	font-size: 15px;
+}
 
+#tablaPosiciones table {
+	border-collapse: collapse;
+	margin: auto;
+	width: 800px;
+	margin-bottom: 40px;
+}
+
+#tablaPosiciones table tr {
+	border-bottom: solid 1px gray;
+}	
+
+#tablaPosiciones table th {
+	background-color: red;
+	color: #FFF;
+	padding: 10px;
+}
+
+#tablaPosiciones table td {
+	background-color: #CCCCCC;
+	padding: 10px;
+}
+
+#tablaPosiciones table td:nth-of-type(odd){ /* Impares */
+	text-align: center;
+	font-weight: bold;
+	font-size: 28px;
+}
+
+#tablaPosiciones table td:nth-of-type(even) span { /* Pares */
+	font-weight: bold;
+	color: blue;
 }
 
