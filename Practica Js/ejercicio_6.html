@@ -63,9 +63,8 @@
 		menu.onchange = mostrarOpcion
 		/* 4) Pensar una solucion logica para esconder todas las habitaciones cada vez que sea necesario */
 
-		for (var i = 0; habitaciones.length ; i++) {
-		habitaciones[i].classList.add ("esconder")
-
+		for (var i = 0; i < habitaciones.length ; i++) {
+		habitaciones[i].classList.add("esconder")
 		}
 
 		function mostrarOpcion(){
@@ -73,7 +72,29 @@
 			 var habitacion = document.querySelector (".habitacion-" + elegida)
 
 			
-
+			if (habitacion == habitaciones[0]) {
+				for (var i = 0; i < habitaciones.length ; i++) {
+				habitaciones[i].classList.add("esconder")
+				}
+				habitaciones[0].classList.remove("esconder")
+			} 
+			else if (habitacion == habitaciones[1]) {
+				for (var i = 0; i < habitaciones.length ; i++) {
+				habitaciones[i].classList.add("esconder")
+				}
+				habitaciones[1].classList.remove("esconder")
+			}
+			else if (habitacion == habitaciones[2]) {
+				for (var i = 0; i < habitaciones.length ; i++) {
+				habitaciones[i].classList.add("esconder")
+				}
+				habitaciones[2].classList.remove("esconder")
+			}
+			else {
+				for (var i = 0; i < habitaciones.length ; i++) {
+				habitaciones[i].classList.add("esconder")
+				}
+			}
 			/* 5) Obtener la opción seleccionada */
 
 			/* 6) Seleccionar la habitación correspondiente usando un selector dinámico */
