@@ -74,9 +74,8 @@
 			 esconderTodas ()
 			 var elegida = menu.value // modesta - lujosa - elegante - 0 //
 
-			 if (elegida == "0") {
-			 	return
-			 }
+			 if (elegida == "0") return
+			 
 			 var habitacion = document.querySelector(".habitacion-" + elegida)
 
 			 habitacion.classList.remove("esconder")
